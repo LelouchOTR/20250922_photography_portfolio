@@ -1,0 +1,53 @@
+/* Additional app-specific styles */
+.cursor-magnetic {
+  cursor: none;
+}
+
+/* Enhanced hover effects */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Magnetic button effect */
+.magnetic-button {
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.magnetic-button:hover {
+  transform: scale(1.05);
+}
+
+/* Parallax container */
+.parallax-container {
+  transform-style: preserve-3d;
+}
+
+/* Video controls styling */
+video::-webkit-media-controls-panel {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+video::-webkit-media-controls-play-button {
+  background-color: #f59e0b;
+  border-radius: 50%;
+}
+
+/* Custom loading animation */
+@keyframes pulse-amber {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse-amber {
+  animation: pulse-amber 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
